@@ -1,0 +1,55 @@
+<div><a routerLink="/bodycompo"   routerLinkActive="active"><h3>
+    <i class='fa fa-arrow-left' style='font-size:24px'></i> GO BACK </h3></a>
+    
+          <div class="row " >
+            <div class="col-sm-2">
+              <img id="firstimg" src="../../assets/pic1.jpg" alt="">
+            </div>
+            <div class="col-sm-2">
+              <img id="secondimg" src="../../assets/pic11.jpg" alt="">
+            </div>
+          
+            <div class="col-sm-4">
+              <h3 id="prodname" style="display: inline">
+                <b> &nbsp;&nbsp;&nbsp;Product Name</b>
+              </h3>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-inr"></i> Rupees </p>
+              <br>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>COLOR: Sample Color</b>
+              </p>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="dot"></span>
+              <br>
+              <br>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Size</b>
+              </p>
+              &nbsp;&nbsp;&nbsp;
+              <span>
+                <button type="button" id="sizebtn" (ngSubmit)="productsized()"> XS </button>&nbsp;&nbsp;&nbsp;
+                <button type="button" id="sizebtn" (ngSubmit)="productsized()"> S </button>&nbsp;&nbsp;&nbsp;
+                <button type="button" id="sizebtn" (ngSubmit)="productsized()"> M </button>&nbsp;&nbsp;&nbsp;
+                <button type="button" id="sizebtn" (ngSubmit)="productsized()"> L </button>&nbsp;&nbsp;&nbsp;
+                <button type="button" id="sizebtn" (ngSubmit)="productsized()"> XL </button>
+              </span>
+              <p style="font-size: 10px; margin-left: 20px">
+                <br>In addition to our size guide, we’d recommend that you see the Size & Fit information below before choosing your size.</p>
+            
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Quantity</b>
+              </p>
+              
+              <span> &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="cartbtn" [disabled]="!productsize">
+                  Add To Cart
+                </button>
+              </span>
+            </div>
+                <img id="thirdimg" src="../../assets/pic111.jpg" alt="">
+          </div>
+         
+</div>
